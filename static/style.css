@@ -1,0 +1,438 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+#button{
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 170px;
+    margin: 20px;
+    border: none;
+    font-weight: bold;
+    /* font-style: italic; */
+    font-family: FFDINforPuma,-apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    font-size: 20px;
+}
+#button a{
+    color: white;
+    text-decoration: none;
+
+}
+#button:hover{
+    cursor: pointer;
+
+}
+.image img{
+    height: 51px;
+    width: 148px;
+    margin-top: 3px;
+    /* border-radius: 20px;
+    margin-top: 12px;
+    margin-left: 18px; */
+}
+#navbar::before{
+    content: '';
+    background-color:black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#navbar{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 62px;
+    font-family: FFDINforPuma,-apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+}
+#navbar ul li{
+   margin-left: auto;
+   margin-left: 50px;
+    margin-top: 0px;
+    font-size: 20px;
+
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.cont ul li{
+    list-style-type: none;
+}
+.cont ul li a{
+    color: white;
+    padding: 0px;
+    text-decoration: none;
+    font-family: FFDINforPuma,-apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    /* font-style: italic; */
+    /* font-weight: 100; */
+    font-weight: bold;
+}
+.cont ul li a:hover{ 
+    text-decoration: underline;
+
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+.home::before{
+    content: '';
+    background: url('../static/bg-4.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#Heading{
+    color:white;
+    font-size:90px;
+    
+    font-family: 'Source Code Pro';
+    font-weight: 500;
+}
+#contacts{
+    margin-left: -35px;
+}
+.home p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    font-family: 'Kaushan Script', cursive;
+    color:black;
+}
+.services{
+    display: flex;
+    margin:34px;
+}
+.services .card1{
+    /* border:2px solid black; */
+    background: url("../static/card1.jpg") no-repeat center center/cover;
+    margin-top: 100px;
+    height: 225px;
+    width: 360px;
+    /* align-items: flex-start; */
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    
+}
+#first{
+    display: flex;    
+    margin-top: 92px;
+    margin-left: 130px;
+}
+#one{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 10px;
+    padding:5px;
+    font-size: 25px;
+}
+#one:hover{
+    background-color: transparent;
+    color:white;
+}
+
+.services .card2{
+    /* border:2px solid black; */
+    border-radius: 25px;
+    background: url("../static/card2.jpg") no-repeat center center/cover;
+    margin-top: 100px;
+    margin-left: 50px;
+    height: 225px;
+    width: 360px;
+    align-items: center;
+    justify-content: center;
+}
+#second{
+    display: flex;   
+    margin-top: 92px;
+    margin-left: 102px;
+}
+#two{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 10px;
+    padding:5px;
+    font-size: 25px
+}
+#two:hover{
+    background-color: transparent;
+    color: white;
+}
+.services .card3{
+    /* border:2px solid black; */
+    border-radius: 25px;
+    background: url("../static/card3.jpg") no-repeat center center/cover;
+    margin-top: 100px;
+    margin-left: 50px;
+    height: 225px;
+    width: 360px;
+    /* align-items: flex-start; */
+    justify-content: center;
+    
+}
+#third{
+    display: flex;   
+    margin-top: 92px;
+    margin-left: 137px;
+}
+#three{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 10px;
+    padding:5px;
+    font-size: 25px
+}
+#three:hover{
+    background-color: transparent;
+    color: white;
+}
+.clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+
+}
+.clients::before{
+    content: "";
+    position: absolute;
+    background: url('../static/fg-1.jpg') no-repeat center center/cover;
+    height: 250px;
+    margin-top: 200px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+.clientsection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  
+}
+#client-1 img{
+    height: 75px;
+    padding: 15px;
+}
+#client-2 img{
+    height: 75px;
+    padding: 15px;
+}
+#client-3 img{
+    height: 75px;
+    padding: 15px;
+}
+#client-4 img{
+    height: 75px;
+    padding: 15px;
+}
+#client-5 img{
+    height: 75px;
+    padding: 15px;
+}
+#client-6 img{
+    height: 75px;
+    padding: 15px;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    margin-top: 65px;
+    justify-content: center;
+    /* margin-bottom: 10px; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 65px;
+    font-size: 40px;
+    color: white;
+}
+img{
+    position: relative;
+}
+#img::before{
+    content: '';
+    position: absolute;
+    background: url('../static/fg-3.jpg') no-repeat center center/cover;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+}
+.signup{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+.signup input,.signup textarea{
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: transparent;
+    outline: none;
+    
+}
+.form{
+    padding:10px;
+    /* width: 50%; */
+    
+}
+.form label{
+    color: white;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-family: FFDINforPuma,-apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    font-weight: bold
+}
+.signup button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 133px;
+    padding:8px;
+    font-size: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.signup button:hover{
+    background-color: transparent;
+    color: white;
+    border:1.5px solid ivory;
+}
+#company{
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    font-weight: bold;
+    /* font-style: italic; */
+    font-family: FFDINforPuma,-apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    /* font-weight: 100; */
+}
+.Company{
+    position: relative;
+    display: inline-block;
+    /* font-weight: 100; */
+}
+#communities{
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    font-weight: bold;
+    /* font-style: italic; */
+    font-family: FFDINforPuma,-apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+}
+#home{
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    font-weight: bold;
+    /* font-style: italic; */
+    font-family: FFDINforPuma,-apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color:black;
+    color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: FFDINforPuma,-apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    /* font-style: italic; */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    /* font-style: italic; */
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color:black; color: white;}
+
+/* Show the dropdown menu on hover */
+.Company:hover .dropdown-content {display: block;
+background-color: white;}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 12px;
+    font-size: 22px;
+    width: 22px;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 0px;
+    border-radius: 50%;
+    margin-top: 10px;
+
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: black;
+    color: white;
+    margin-top: 79px;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: black;
+    color: white;
+  }
+  .fa-instagram {
+    background: black;
+    color: white;
+  }
+  .icons{
+      margin-left: 440px;
+  }
+ .S label{
+     margin: 77px;
+    color: white;
+    font-size: 17px;
+    font-family: FFDINforPuma,-apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    font-weight: bold;
+ }

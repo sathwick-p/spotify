@@ -1,0 +1,42 @@
+h2{
+    text-align: center;
+    padding-top: 70px;
+    font-weight: bold;
+    font-size: 28px;
+    font-family: 'Kaushan Script', cursive;
+    
+}
+.myInput{
+    display: block;
+    width: 30%;
+    padding: 13px;
+    margin: 13px;
+    font-size: 16px;
+    outline: none;
+    border:2px solid black;
+}
+.myForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+body{
+    background:url() no-repeat center center/cover;
+}
+.btnn{
+    width: 80px;
+    font-size: 16px;
+    height: 33px;
+    color: white;
+    outline: none;
+    border: none;
+    font-family: FFDINforPuma,-apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    background-color: black;
+    padding-bottom: 4px;
+    cursor: pointer;
+}
+.icons{
+    margin-left: 590px;
+}

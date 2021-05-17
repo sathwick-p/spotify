@@ -1,0 +1,63 @@
+extends base.pug
+block scripts
+    script(src="/static/index.js")
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+block style
+    style
+        include ../static/style.css
+        include ../static/styleforcs.css
+block content
+    <nav id="navbar">
+        <div class="image"><img src="../static/logo.png" alt="Our logo"></div>
+        <div class="cont">
+            <ul>
+                <!-- <li><a href="#Heading" class="items">Home</a></li> -->
+                <div class="Company">
+                    <button id="home">Home</button>
+                    <div class="dropdown-content">
+                        <a href="">Web Player</a>
+                        <a href="">Free Mobile App</a>
+                        <a href="">Premium</a>
+                    </div>
+                </div>
+                <!-- <li><a href="#button" class="items">Company</a></li> -->
+                <div class="Company">
+                    <button id="company">Company</button>
+                    <div class="dropdown-content">
+                        <a href="#">About</a>
+                        <a href="#">Jobs</a>
+                        <a href="#">For the Record</a>
+                    </div>
+                </div>
+                <!-- <li><a href="#" class="items">Communities</a></li> -->
+                <div class="Company">
+                    <button id="communities">Communities</button>
+                    <div class="dropdown-content">
+                        <a href="#">For Artists</a>
+                        <a href="#">Developers</a>
+                        <a href="#">Advertising</a>
+                        <a href="#">Investors</a>
+                        <a href="#">Vendors</a>
+                    </div>
+                </div>
+                <li><a href="#img" class="items" id="contacts">Log In</a></li>
+            </ul>
+        </div>
+        <div class="icons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+    </nav>
+block another
+    h2 Contact us
+    form(action="/contact", method="post",class="myForm")
+        input(type="text" class="myInput",name="username",placeholder="Enter your name")
+        input(type="phone" class="myInput",name="phone",placeholder="Enter your phone-number")
+        input(type="id" class="myInput",name="emailid",placeholder="Enter your email-id")
+        input(type="text" class="myInput",name="location",placeholder="Enter your address")
+        input(type="text" class="myInput",name="desc",placeholder="Enter your concern")
+        button(class="btnn")
+            | Submit

@@ -1,0 +1,14 @@
+//- Pug supports template inheritance. Template inheritance works via the block and extends keywords.
+
+//- In a template, a block is simply a “block” of Pug that a child template may replace. This process is recursive.
+
+//- Pug blocks can provide default content, if appropriate. Providing default content is purely optional, though. The example below defines block scripts, block content, and block foot.
+doctype html 
+html
+  head
+    title My Site - Spotify 
+    block scripts
+    block style 
+  body
+    block content 
+    block another 
